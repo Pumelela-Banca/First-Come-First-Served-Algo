@@ -10,6 +10,9 @@ namespace FCFS
     {
         static void Main(string[] args)
         {
+            // memory block
+
+            List<MemoryBlock> = new List<MemoryBlock>();
         }
     }
 }
