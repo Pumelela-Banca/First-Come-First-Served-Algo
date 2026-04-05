@@ -10,8 +10,10 @@ namespace FCFS
     {
         public int  Id { get; set;  }
         public int Size { get; set; }
-        public bool IsFree { get; set; }
+        public bool IsAllocated { get; set; }
         public int? ProcessId { get; set; }
+
+        
 
     }
 }

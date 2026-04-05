@@ -8,7 +8,7 @@ namespace FCFS
 {
     internal class Process
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public int Size { get; set; }
     }
 }
