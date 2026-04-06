@@ -23,7 +23,7 @@ namespace FCFS
                 {
                     block.IsAllocated = true;
                     block.ProcessId = process.Id;
-                    Console.WriteLine("Process {} Allocated to block {}", process.Id, block.Id );
+                    Console.WriteLine("Process {0} Allocated to block {1}", process.Id, block.Id );
                 }
             }
         }

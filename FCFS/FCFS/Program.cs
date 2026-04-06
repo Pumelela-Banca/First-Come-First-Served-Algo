@@ -12,7 +12,22 @@ namespace FCFS
         {
             // memory block
 
-            List<MemoryBlock> = new List<MemoryBlock>();
+            List<Process> processes = new List<Process> {
+                new Process { Id = 1, Size = 120 },
+                new Process { Id = 2, Size = 80 }
+                };
+
+            var blocks = new List<MemoryBlock>
+            {
+                new MemoryBlock { Id = 1, Size = 100 },
+                new MemoryBlock { Id = 2, Size = 500 },
+                new MemoryBlock { Id = 3, Size = 200 }
+            };
+
+            MemoryManager memoryManager = new MemoryManager(blocks);
+
+            memoryManager.FirstComeFirstServed(processes);
+
         }
     }
 }
